@@ -346,16 +346,13 @@ body p {
   word-spacing: 0px;
 }
 
-/* .skills {
-  background: linear-gradient(to bottom right, #f9c784, #f26695);
-} */
 .skills {
   padding: 40px;
   width: 100%;
   text-align: center;
 }
 
-table {
+.skills table {
   border-collapse: collapse;
   width: 100%;
   max-width: 600px;
@@ -367,7 +364,7 @@ table {
 }
 
 .labels {
-  background-color: #f24f93;
+  background-color: #938ed9;
   color: white;
   padding: 15px;
   font-size: 22px;
@@ -386,14 +383,6 @@ th {
   font-weight: bold;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-}
-
 .notice {
   background-color: #f24f93;
   color: white;
@@ -404,31 +393,3 @@ tr:hover {
   width: 50%;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
-/* JUST TESTING STUFF
-
-.about-photos {
-  color: purple;
-}
-
-.about-photo-container {
-  background: green;
-  width: 500px;
-  height: 200px;
-}
-img {
-  width: 100px;
-  height: 100px;
-  display: flex;
-}
-.about-photo2 {
-  background: teal;
-  width: 100%;
-  justify-content: center;
-}
-
-.about-photo3 {
-  background: aqua;
-  width: 100%;
-  justify-content: right;
-} */
