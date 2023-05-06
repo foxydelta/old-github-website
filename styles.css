@@ -34,6 +34,13 @@ nav li a:hover {
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
+  background: linear-gradient(
+    to bottom right,
+    #fedce0,
+    #fee0f9,
+    #dce0fe,
+    #e0f9fe
+  );
 }
 
 .main-content {
@@ -42,13 +49,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 70px - 100px);
-  background: linear-gradient(
-    to bottom right,
-    #fedce0,
-    #fee0f9,
-    #dce0fe,
-    #e0f9fe
-  );
 }
 
 .about-me {
@@ -359,6 +359,7 @@ body p {
   margin: auto;
   background-color: white;
   border-radius: 20px;
+  border-color: red;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -392,4 +393,97 @@ th {
   border-radius: 15px;
   width: 50%;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.videos {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.videos tbody {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.videos thead {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.videos th,
+.videos td {
+  vertical-align: top;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 253px;
+}
+
+video {
+  position: relative;
+  width: 380px;
+  height: 253px;
+  border: none;
+  border-radius: 20px;
+}
+
+iframe {
+  width: 380px;
+  height: 253px;
+  border: none;
+  position: relative;
+  border-radius: 20px;
+}
+
+table.test-table {
+  border: 0px solid #ffffff;
+  background-color: #eeeeee;
+  width: 800px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table.test-table td,
+table.test-table th {
+  border: 0px solid #aaaaaa;
+  padding: 10px;
+}
+
+table.test-table tbody td {
+  font-size: 13px;
+}
+
+table.test-table thead {
+  background: #9d8cc3;
+}
+
+table.test-table thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+#head1 {
+  border-top-left-radius: 20px;
+}
+
+#head2 {
+  border-top-right-radius: 20px;
 }
