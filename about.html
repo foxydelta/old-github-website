@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="menu">
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </div>
-      </nav>
+      <iframe
+        src="header.html"
+        onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"
+      ></iframe>
     </header>
+
     <div class="main-content">
       <h1 class="about-head">About Me</h1>
 
@@ -41,46 +33,59 @@
 
       <div class="about-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-          augue est. Duis non tortor aliquam, tincidunt massa eget, aliquet
-          libero. In in massa eget augue ultrices volutpat. Suspendisse ac risus
-          id mauris tempor ultrices. Sed fermentum quis velit in commodo. Nullam
-          vel augue et lacus tincidunt aliquet id eu arcu. Donec vulputate velit
-          ac elit tincidunt, at venenatis sapien auctor. Donec tincidunt sapien
-          ut dolor vulputate, eget semper tellus consectetur. Nulla euismod
-          mauris et nibh commodo efficitur.
+          I'm an aspiring Computer Scientist based in the Vernon Hills, IL. With
+          a B.S. degree in Computer Science & Information Systems from National
+          Louis University, I am equipped with a solid foundation in
+          programming, cybersecurity, and system design. I am looking to
+          kickstart my career in the tech industry. I am passionate about
+          creating innovative solutions that solve real-world problems and I'm
+          eager to embark on new challenges in the field. In my free time, I
+          like to hike, play video games, and spend time at local animal
+          shelters visiting the rescue dogs. I currently work part-time as the
+          IT & Systems Assistant, but I am eager to dive into systems
+          development and information security.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-          augue est. Duis non tortor aliquam, tincidunt massa eget, aliquet
-          libero. In in massa eget augue ultrices volutpat. Suspendisse ac risus
-          id mauris tempor ultrices. Sed fermentum quis velit in commodo. Nullam
-          vel augue et lacus tincidunt aliquet id eu arcu. Donec vulputate velit
-          ac elit tincidunt, at venenatis sapien auctor. Donec tincidunt sapien
-          ut dolor vulputate, eget semper tellus consectetur. Nulla euismod
-          mauris et nibh commodo efficitur.
+          Throughout my academic journey, I have gained valuable experience
+          working on various projects, honing my skills in software development,
+          and expanding my knowledge of different programming languages and
+          technologies. I have a strong aptitude for problem-solving and a
+          meticulous attention to detail. Additionally, I possess excellent
+          communication and teamwork skills, allowing me to collaborate
+          effectively with cross-functional teams and contribute to the success
+          of projects. On my campus, I founded and served as President of the
+          Computer Science Club. There, I helped foster interest and
+          extracurricular engagement in technology for my peers.
         </p>
       </div>
 
       <h2>My Resume</h2>
-      <iframe
+      <!-- <iframe
+        class="resume"
         src="documents/Victoria Ivana Price Resume.pdf"
+        width="auto"
+        height="auto"
+      ></iframe> -->
+    </div>
+    <div id="resume" class="embed-responsive" style="padding-bottom: 150%">
+      <object
+        data="documents/Victoria Ivana Price Resume.pdf"
+        type="application/pdf"
         width="100%"
-        height="1000px"
-      ></iframe>
+        height="100%"
+      ></object>
     </div>
     <footer>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
-      <div class="copyright">
-        <p>&copy; Copyright 2023 Victoria Price. All rights reserved.</p>
-      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.7.0.slim.js"
+        integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+        crossorigin="anonymous"
+      ></script>
+      <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+      <iframe
+        src="footer.html"
+        onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"
+      ></iframe>
     </footer>
   </body>
 </html>

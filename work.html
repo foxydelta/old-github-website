@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
     <title>My Work</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
+    <header>
+      <iframe
+        src="header.html"
+        onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"
+      ></iframe>
+    </header>
 
     <div class="main-content">
       <h1 class="about-head">My Work</h1>
       <div class="work-gallery">
         <div class="work-item">
-          <img src="images\glamtrackr_banner.png" alt="GlamTrackr" />
+          <img src="images\glamtrackr_banner_cropped.png" alt="GlamTrackr" />
           <h3>GlamTrackr (Mobile App Prototype)</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
-            urna quis nulla pretium auctor eu nec orci. Suspendisse non commodo
-            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            nec urna quis nulla pretium auctor eu nec orci. Suspendisse non
-            commodo metus.
+            GlamTrackr is a mobile app that allows users to track their makeup
+            usage. The app will then provide insights into their makeup habits
+            and preferences. This interactive prototype was created with Marvel
+            and then built out as a web app in AppHive.
           </p>
           <a
             href="https://marvelapp.com/prototype/9b10jj6"
@@ -42,28 +36,27 @@
           >
         </div>
         <div class="work-item">
-          <img src="images\rps_bot.jpeg" alt="Rock Paper Scissors" />
+          <img src="images\rps_bot_cropped.jpeg" alt="Rock Paper Scissors" />
           <h3>Rock Paper Scissors (Python Bot)</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
-            urna quis nulla pretium auctor eu nec orci. Suspendisse non commodo
-            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            nec urna quis nulla pretium auctor eu nec orci. Suspendisse non
-            commodo metus.
+            Rock Paper Scissors is a Python bot that plays the game of the same
+            name. The bot uses rudimentary AI to learn from the player's moves
+            and adjust its own moves accordingly. It is a fun game for all ages.
+            This bot was built using Python and runs in the CLI.
           </p>
           <a href="https://github.com/foxydelta/RPS" class="project-button"
             >View Project</a
           >
         </div>
         <div class="work-item">
-          <img src="images\stray_cat.jpeg" alt="Stray Cat" />
+          <img src="images\stray_cat_resized.jpeg" alt="Stray Cat" />
           <h3>Abandoned (Text-Adventure)</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
-            urna quis nulla pretium auctor eu nec orci. Suspendisse non commodo
-            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            nec urna quis nulla pretium auctor eu nec orci. Suspendisse non
-            commodo metus.
+            Abandoned is a text-adventure game that follows a stray cat as she
+            tries to survive in the city. The player must make choices for the
+            cat that will determine her fate. There are multiple endings based
+            on your choices. This game was built using Python and runs in the
+            CLI.
           </p>
           <a
             href="https://github.com/foxydelta/ABANDONED"
@@ -74,17 +67,16 @@
       </div>
     </div>
     <footer>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
-      <div class="copyright">
-        <p>&copy; Copyright 2023 Victoria Price. All rights reserved.</p>
-      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.7.0.slim.js"
+        integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+        crossorigin="anonymous"
+      ></script>
+      <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+      <iframe
+        src="footer.html"
+        onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"
+      ></iframe>
     </footer>
   </body>
 </html>
